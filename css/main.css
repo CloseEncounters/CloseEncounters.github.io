@@ -1,0 +1,142 @@
+body, html, main {
+	/* important */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color:white;
+    background-color: black;
+    font-family: sans-serif;
+}
+#nav{background-color: #222;
+    position:fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#nav-wrapper{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+#nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color:white;
+}
+#nav ul li{
+    display: inline-block
+}
+#nav ul li:hover{
+    background-color: #333;
+}
+#nav ul li a,visited{
+    display:block;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif
+}
+#home-page-text{font-style: italic;
+font-size: 60px;}
+
+
+.cd-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0;
+    margin: 0;
+}
+ 
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url(mars-background1.jpg);
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url(venus1.jpg);
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url(moon-background.jpg);
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("AralSea1989_2014.jpg");
+}
+ 
+.cd-scrolling-bg {
+    background-color: black;
+    text-align:center;
+    
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+.cd-intro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  width: 90%;
+    max-width: 1170px;
+z-index: 1;
+}
+
+.backgroundquotes{position: relative;
+    top: 300px;
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+}
+a.backgroundquotes2{text-decoration: none;
+    color: white;}
+   
+.button {
+    /* Block Style */
+    display: inline-block;
+    height:70px;
+    width: 220px;
+    margin-bottom: 45px;
+    border: 3px solid white;
+    /*Text Style */
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 70px
+}
+a.button{
+    /*Link Style*/
+    text-decoration: none;
+    
+}
+.button:hover{
+    border-color: white;
+    color:black;
+    background-color: white;
+}
+h2{
+    font-size: 35px;
+}
+p{margin:50px}
+
+a.anchor{
+    display: block;
+    position: relative;
+    top: -77px;
+    visibility: hidden;
+}
