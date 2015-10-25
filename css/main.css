@@ -98,13 +98,17 @@ z-index: 1;
 }
 
 .backgroundquotes{position: relative;
-    top: 300px;
+    display: table;
+    width: 100%;
     font-style: italic;
     font-size: 12px;
-    text-align: center;
 }
 a.backgroundquotes2{text-decoration: none;
-    color: white;}
+    color: white;
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle;
+}
    
 .button {
     /* Block Style */
