@@ -97,17 +97,15 @@ font-size: 60px;}
 z-index: 1;
 }
 
+
 .backgroundquotes{position: relative;
-    display: table;
-    width: 100%;
+    top: 300px;
     font-style: italic;
     font-size: 12px;
+    text-align: center;
 }
 a.backgroundquotes2{text-decoration: none;
-    color: white;
-    display:table-cell;
-    text-align: center;
-    vertical-align:middle;
+    color: white;}
 }
    
 .button {
