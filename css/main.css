@@ -48,7 +48,6 @@ font-size: 60px;}
 
 .cd-fixed-bg {
 	min-height: 100%;
-	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -57,19 +56,20 @@ font-size: 60px;}
     align-items:center;
     padding: 0;
     margin: 0;
+    background-size: cover;
 }
  
 .cd-fixed-bg.cd-bg-1 {
-  background-image: url(https://cloud.githubusercontent.com/assets/15255397/10680587/1349802e-78ef-11e5-9c62-b8b71d417d88.jpg);
+  background-image: url(mars-background1.jpg);
 }
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url(https://cloud.githubusercontent.com/assets/15255397/10680672/cc8c3f9a-78ef-11e5-92d7-55cacafa1951.jpg);
+  background-image: url(venus1.jpg);
 }
 .cd-fixed-bg.cd-bg-3 {
-  background-image: url(https://cloud.githubusercontent.com/assets/15255397/10680660/b47a7674-78ef-11e5-88d9-c0de60f724c9.jpg);
+  background-image: url(moon-background.jpg);
 }
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url(https://cloud.githubusercontent.com/assets/15255397/10680550/c58a3eb4-78ee-11e5-8b96-147de5095ac6.jpg);
+  background-image: url(AralSea1989_2014.jpg);
 }
  
 .cd-scrolling-bg {
@@ -97,7 +97,6 @@ font-size: 60px;}
 z-index: 1;
 }
 
-
 .backgroundquotes{position: relative;
     top: 300px;
     font-style: italic;
@@ -106,7 +105,6 @@ z-index: 1;
 }
 a.backgroundquotes2{text-decoration: none;
     color: white;}
-}
    
 .button {
     /* Block Style */
@@ -142,3 +140,4 @@ a.anchor{
     top: -77px;
     visibility: hidden;
 }
+
