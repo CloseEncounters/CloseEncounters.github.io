@@ -7,7 +7,7 @@ body, html, main {
     background-color: black;
     font-family: sans-serif;
 }
-#nav{background-color: #222;
+#nav{background-color: black;
     position:fixed;
     width:100%;
     top: 0;
@@ -100,7 +100,7 @@ z-index: 1;
 .backgroundquotes{position: relative;
     top: 300px;
     font-style: italic;
-    font-size: 12px;
+    font-size: 22px;
     text-align: center;
 }
 .backgroundquotes2{text-decoration: none;
