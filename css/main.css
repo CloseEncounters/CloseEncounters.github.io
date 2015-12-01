@@ -6,44 +6,49 @@ body, html, main {
     color:white;
     background-color: black;
     font-family: sans-serif;
+    font-size: 16px;
 }
-#nav{background-color: black;
+body{
+    font-size:62.5%;
+}
+h2{
+    font-size: 3.5em;
+}
+
+p{
+    margin: 3.90625%;
+}
+p, nav{
+    font-size:1.6em;
+}
+nav{background-color: black;
     position:fixed;
-    width:100%;
+    width:inherit;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2;
-}
-
-#nav-wrapper{
-    width:100%;
     margin: 0 auto;
     text-align: center;
-}
-#nav ul{
-    list-style-type: none;
     padding: 0;
     margin: 0;
-    color:white;
 }
-#nav ul li{
-    display: inline-block
+
+nav a:hover{
+    background-color: white;
+    color:black
 }
-#nav ul li:hover{
-    background-color: #333;
-}
-#nav ul li a,visited{
-    display:block;
-    padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+nav a{
+    display:inline-block;
+    padding: 15px 30px 15px 30px;
     color: white;
     text-decoration: none;
-    font-family: sans-serif
 }
-#home-page-text{font-style: italic;
-font-size: 60px;}
+#home-page-text{
+    font-style: italic;
+    font-size: 6em;
+    letter-spacing: .5em;
+}
 
 
 .cd-fixed-bg {
@@ -52,19 +57,18 @@ font-size: 60px;}
 	background-repeat: no-repeat;
 	background-position: center center;
     display: flex;
-    flex-direction: column;
     align-items:center;
+    justify-content: center;
     padding: 0;
     margin: 0;
     background-size: cover;
+    max-width: 100%;
 }
  
 .cd-fixed-bg.cd-bg-1 {
   background-image: url(https://cloud.githubusercontent.com/assets/15255397/10680587/1349802e-78ef-11e5-9c62-b8b71d417d88.jpg);
 }
-.cd-fixed-bg.cd-bg-2 {
-  background-image: url(https://cloud.githubusercontent.com/assets/15255397/10680672/cc8c3f9a-78ef-11e5-92d7-55cacafa1951.jpg);
-}
+
 .cd-fixed-bg.cd-bg-3 {
   background-image: url(https://cloud.githubusercontent.com/assets/15255397/10680660/b47a7674-78ef-11e5-88d9-c0de60f724c9.jpg);
 }
@@ -73,12 +77,7 @@ font-size: 60px;}
 }
  
 .cd-scrolling-bg {
-    background-color: black;
     text-align:center;
-    
-    margin-left: 80px;
-    margin-right: 80px;
-    
 }
 .cd-intro {
   position: absolute;
@@ -86,38 +85,42 @@ font-size: 60px;}
   top: 50%;
   bottom: auto;
   right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-75%);
+  -moz-transform: translateX(-50%) translateY(-75%);
+  -ms-transform: translateX(-50%) translateY(-75%);
+  -o-transform: translateX(-50%) translateY(-75%);
+  transform: translateX(-50%) translateY(-75%);
   text-align: center;
-  width: 90%;
-    max-width: 1170px;
-z-index: 1;
+  width: 100%;
+  max-width: inherit;
+  z-index: 1;
 }
 
-.backgroundquotes{position: relative;
-    top: 300px;
+.backgroundquotes{
     font-style: italic;
-    font-size: 18px;
+    font-size: 1.8em;
     text-align: center;
 }
+
 .backgroundquotes2{text-decoration: none;
-    color: white;}
-   
+    color: white; 
+}
+.homebuttons{
+    position: inherit;
+    margin: 35% 0 0 0;  
+}
 .button {
     /* Block Style */
     display: inline-block;
+    width: 200px;
     height:70px;
-    width: 220px;
-    margin-bottom: 45px;
+    margin: 0 auto 3.515625% auto;
     border: 3px solid white;
     /*Text Style */
     color: white;
     text-align: center;
-    font-size: 18px;
-    line-height: 70px
+    font-size: 1.8em;
+    line-height: 70px;
 }
 a.button{
     /*Link Style*/
@@ -129,10 +132,6 @@ a.button{
     color:black;
     background-color: white;
 }
-h2{
-    font-size: 35px;
-}
-p{margin:50px}
 
 a.anchor{
     display: block;
@@ -140,4 +139,14 @@ a.anchor{
     top: -77px;
     visibility: hidden;
 }
+/* 1st breakpoint (when home title starts to break) */
+@media screen and (max-width=780px){
 
+#home-page-text{
+    display: none;
+    font-style: italic;
+    font-size: 3em;
+    letter-spacing: 0px;
+}
+
+}
